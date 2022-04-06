@@ -19,7 +19,7 @@ body{
 --------------*/
 .upgrade-header{
     background-color: #080b12;
-    height: 90px;
+    height: 100px;
     width: calc( 100% - 230px );
     position: fixed;
     right: 0;
@@ -42,14 +42,32 @@ body{
     ASIDE
 --------------*/
 
-
-.container{
+.container-aside{
     display: flex;
     flex-direction: column;
     width: 230px;
     height: calc( 100vh - 100px );
     background-color: black;
-    
+    /* overflow-y: scroll; */
+}
+
+.logo-lg-spotify{
+    height: 40px;
+    margin: 20px 0 30px 20px;
+}
+
+.main-nav-aside ul li{
+    color: #a3a3a3;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.main-nav-aside ul li img{
+    height: 30px;
+}
+
+.main-nav-aside ul li:first-of-type{
+    border-left: 3px solid #adff2f;
 }
 
 /*-------------
@@ -57,10 +75,14 @@ body{
 --------------*/
 .container-main{
     display: flex;
+}
+
+.menu-container{
     background-color: #141922;
     width: 100%;
     height: calc( 100vh - 100px );
     overflow-y: scroll;
+    flex-wrap: wrap;
 }
 
 /*-------------
