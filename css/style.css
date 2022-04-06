@@ -20,8 +20,9 @@ body{
 .upgrade-header{
     background-color: #080b12;
     height: 90px;
-    width: 100%;
-     
+    width: calc( 100% - 230px );
+    position: fixed;
+    right: 0;
 }
 
 .header-buttom{
@@ -35,4 +36,38 @@ body{
     border-color: white;
     border-radius: 30px;
     padding: 15px 40px;
+}
+
+/*-------------
+    ASIDE
+--------------*/
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    height: calc( 100vh - 100px );
+    background-color: black;
+    
+}
+
+/*-------------
+    MAIN
+--------------*/
+.container-main{
+    display: flex;
+    background-color: #141922;
+    width: 100%;
+    height: calc( 100vh - 100px );
+    overflow-y: scroll;
+}
+
+/*-------------
+    FOOTER
+--------------*/
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #282828;
 }
