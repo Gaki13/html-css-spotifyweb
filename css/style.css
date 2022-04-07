@@ -184,6 +184,10 @@ section{
     margin: 20px 0 10px;
 }
 
+.artist-img{
+    border-radius: 50%;
+}
+
 
 /*-------------
     FOOTER
