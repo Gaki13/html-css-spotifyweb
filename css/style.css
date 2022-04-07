@@ -164,14 +164,20 @@ section{
     text-align: center;
 }
 
-section h2{
+.section-title{
     width: 100%;
     text-align: left;
+    padding-left: 10px;
 }
 
 .album{
     margin-top: 30px;
-    width: calc( 100% / 6 );
+    width: calc( 100% / 6 - 10px );
+}
+
+.album img{
+    width: 100%;
+    padding: 0px 10px;
 }
 
 .album h3{
