@@ -132,17 +132,21 @@ body{
 
 .menu-container{
     display: flex;
+    flex-direction: row;
     background-color: #141922;
     width: 100%;
     height: calc( 100vh - 100px );
     overflow-y: scroll;
     flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .main-nav-menu{
-    display: inline-block;
+    display: inline;
     color: #a3a3a3;
-    margin: 130px auto 0 auto;
+    height: fit-content;
+    padding-top: 120px;
+    margin: 0 auto;
 }
 
 .main-nav-menu ul li{
@@ -150,9 +154,30 @@ body{
     margin: 0 9px;
 }
 
-.main-nav-menu ul li:first-of-type{
-    border-bottom: 3px solid #adff2f;
+section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+    padding-left: 20px;
+    margin-top: 55px;
+    text-align: center;
 }
+
+section h2{
+    width: 100%;
+    text-align: left;
+}
+
+.album{
+    margin-top: 30px;
+    width: calc( 100% / 6 );
+}
+
+.album h3{
+    margin: 20px 0 10px;
+}
+
 
 /*-------------
     FOOTER
