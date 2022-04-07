@@ -162,6 +162,7 @@ section{
     padding-left: 20px;
     margin-top: 55px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .section-title{
@@ -170,18 +171,33 @@ section{
     padding-left: 10px;
 }
 
+.section-title h2{
+    font-size: 35px;
+}
+
+.section-title span{
+    color: #727579;
+    font-weight: bold;
+}
+
 .album{
     margin-top: 30px;
     width: calc( 100% / 6 - 10px );
 }
 
+.album h3{
+    margin: 20px 0 10px;
+    font-size: 25px;
+}
+
+.album span{
+    color: #727579;
+    font-weight: bold;
+}
+
 .album img{
     width: 100%;
     padding: 0px 10px;
-}
-
-.album h3{
-    margin: 20px 0 10px;
 }
 
 .artist-img{
