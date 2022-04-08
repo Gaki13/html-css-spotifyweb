@@ -89,6 +89,7 @@ body{
 .playlist-nav ul li{
     margin-bottom: 20px;
     color: #a3a3a3;
+    font-weight: bold;
     transition: color;
 }
 
@@ -148,6 +149,7 @@ body{
 .main-nav-menu{
     display: inline;
     color: #a3a3a3;
+    font-weight: bold;
     height: fit-content;
     padding-top: 120px;
     margin: 0 auto;
@@ -211,8 +213,9 @@ section{
     overflow: hidden;
 }
 
-.artist-img{
+.artist-image{
     border-radius: 50%;
+    overflow: hidden;
 }
 
 
@@ -275,6 +278,7 @@ footer{
 
 .buttons-top i:nth-child(3){
     font-size: 35px;
+    transition: all;
 }
 
 .song-progressive{
@@ -394,6 +398,10 @@ footer{
     cursor: pointer;
 }
 
+.buttons-top i:nth-child(3):hover{
+    transform: scale( 1.3 );
+}
+
 .bar-progression:hover{
     background-color: #adff2f;
     cursor: pointer;
@@ -402,3 +410,7 @@ footer{
 .bar-progression i:hover{
     opacity: 1;
 }
+
+/*-------------
+   RESPONSIVE
+--------------*
