@@ -187,7 +187,8 @@ section{
 
 .album{
     margin-top: 30px;
-    width: calc( 100% / 6 - 10px );
+    width: calc( 100% / 6 - 20px );
+    margin: 30px 10px;
 }
 
 .album h3{
@@ -202,12 +203,12 @@ section{
 
 .album img{
     width: 100%;
-    padding: 0px 10px;
     display: block;
 }
 
 .album-image {
     position: relative;
+    overflow: hidden;
 }
 
 .artist-img{
@@ -229,6 +230,7 @@ footer{
 .song-playing{
     display: flex;
     color: #7b7b7b;
+    transition: color text-decoration;
 }
 
 .song-name{
@@ -312,6 +314,17 @@ footer{
     width: 20%;
     background-color: #c1c1c1;
     border-radius: 2.5px;
+    transition: background-color;
+    position: relative;
+}
+
+.bar-progression i{
+    position: absolute;
+    right: 0;
+    top: -2.5px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity;
 }
 
 /*-------------
@@ -366,5 +379,26 @@ footer{
 }
 
 .album:hover .album-image::after {
+    opacity: 1;
+}
+
+/* effetti footer */
+.song-playing span:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.song-playing i:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.bar-progression:hover{
+    background-color: #adff2f;
+    cursor: pointer;
+}
+
+.bar-progression i:hover{
     opacity: 1;
 }
