@@ -212,4 +212,36 @@ footer{
     width: 100%;
     height: 100px;
     background-color: #282828;
+    display: flex;
+}
+
+.song-playing{
+    display: flex;
+    color: #7b7b7b;
+}
+
+.song-name{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.song-name h5{
+    color: white;
+    font-size: 18px;
+}
+
+.song-name img{
+    height: 100%;
+    padding: 25px 15px;
+}
+
+.icons{
+    line-height: 100px;
+    font-size: 18px;
+    margin-left: 55px;
+}
+
+.icons i{
+    margin: 0 5px;
 }
