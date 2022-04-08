@@ -213,6 +213,7 @@ footer{
     height: 100px;
     background-color: #282828;
     display: flex;
+    justify-content: space-between;
 }
 
 .song-playing{
@@ -244,4 +245,39 @@ footer{
 
 .icons i{
     margin: 0 5px;
+}
+
+.multimedia-buttons{
+    text-align: center;
+}
+
+.buttons-top{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.buttons-top i{
+    margin: 0 15px;
+}
+
+.buttons-top i:nth-child(3){
+    font-size: 35px;
+}
+
+.song-progressive{
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.song-bar{
+    height: 5px;
+    width: 430px;
+    background-color: #5a5a5a;
+    border-radius: 2.5px;
+    margin: 0 40px;
 }
