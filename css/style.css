@@ -281,3 +281,19 @@ footer{
     border-radius: 2.5px;
     margin: 0 40px;
 }
+
+.volume{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+
+.volume-bar{
+    height: 5px;
+    width: 120px;
+    background-color: #5a5a5a;
+    border-radius: 2.5px;
+    margin-right: 20px;
+}
