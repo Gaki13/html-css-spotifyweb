@@ -424,15 +424,12 @@ footer{
     .album{       
         width: calc( 100% / 4 - 20px ); 
     }
-
     .main-nav-menu ul li{
         margin: 0 20px 40px;
     }
-
     .song-name{
         font-size: 14px;
-    }
-    
+    }  
     .icons{
         display: flex;
         align-items: center;
@@ -443,16 +440,51 @@ footer{
         width: 250px;
         margin: 0 20px;
     }
-
     .buttons-top{
         font-size: 16px;
     }
-
     .buttons-top i{
         margin: 0 10px;
     }
-    
     .volume{
         display: flex;
+    }
+}
+
+@media screen and ( max-width: 700px) {
+   
+    .menu-container{
+        width: 100%;
+    }
+    .album{
+        width: calc( 100% / 2 - 20px);
+    }
+
+    .song-name{
+        font-size: 10px;
+    } 
+    .song-name h5{
+        font-size: 14px;
+    }
+    
+    .volume i{
+        font-size: 12px;
+    } 
+    
+    .icons{
+        display: block;
+        line-height: 15px;
+        margin-top: 30px;
+    }
+
+     
+
+    .bar.song-b{
+        width: 150px;
+        margin: 0 20px;
+    }
+    .bar.volume-b{
+        width: 100px;
+        margin-right: 20px;
     }
 }
