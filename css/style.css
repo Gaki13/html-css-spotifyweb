@@ -24,6 +24,7 @@ body{
     position: fixed;
     right: 0;
     opacity: 0.8;
+    z-index: 10;
 }
 
 .header-buttom{
@@ -56,6 +57,12 @@ body{
 .logo-lg-spotify{
     height: 40px;
     margin: 20px 0 30px 20px;
+}
+
+.logo-xs-spotify{
+    display: none;
+    height: 30px;
+    margin: 5px 0px 30px 10px;
 }
 
 .main-nav-aside ul li{
@@ -476,9 +483,6 @@ footer{
         line-height: 15px;
         margin-top: 30px;
     }
-
-     
-
     .bar.song-b{
         width: 150px;
         margin: 0 20px;
@@ -487,4 +491,66 @@ footer{
         width: 100px;
         margin-right: 20px;
     }
+}
+
+@media screen and ( max-width: 600px )  {
+    .upgrade-header{
+        width: calc( 100% - 50px );
+    }
+
+    .main-nav-menu{
+        font-size: 14px;
+    }
+    
+    .container-aside{
+        width: 50px;
+        justify-content: space-between;
+    }
+    .logo-lg-spotify{
+        display: none;
+    }
+    .logo-xs-spotify{
+        display: block;
+    }
+
+    .main-nav-aside span{
+        display: none;
+    }
+    .main-nav-aside ul li{
+        padding-left: 10px;
+    }
+    .main-nav-aside ul li img{
+        height: 30px;
+    }
+    .main-nav-aside ul li:first-of-type{
+        border-left: none;
+    }
+    .playlist-nav{
+        display: none;
+    }
+    .user{
+        padding: 0 10px;
+        color: #080b12;
+    }
+    .user h4, .user span{
+        display: none;
+    }
+    .icons{
+        margin-left: 20px;
+    }
+    .bar.song-b{
+        width: 130px;
+        margin: 0 20px;
+    }
+    .bar.volume-b{
+        width: 80px;
+        margin-right: 10px;
+    }
+    
+    .volume{
+        gap: 5px;
+    }
+    .volume i{
+        font-size: 12px;
+    } 
 }
